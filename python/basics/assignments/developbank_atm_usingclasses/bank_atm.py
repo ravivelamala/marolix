@@ -26,16 +26,25 @@ class BankAccount:
 account_number = "12345"  # Replace with your account number
 account = BankAccount(account_number)
 
-# Check initial balance
-print(account.check_balance())
+while True:
+    print("Options:")
+    print("1. Check Balance")
+    print("2. Deposit Funds")
+    print("3. Withdraw Funds")
+    print("4. Exit")
 
-# Deposit funds
-deposit_amount = 100
-print(account.deposit(deposit_amount))
+    choice = input("Enter option (1/2/3/4): ")
 
-# Withdraw funds
-withdraw_amount = 50
-print(account.withdraw(withdraw_amount))
-
-# Check updated balance
-print(account.check_balance())
+    if choice == "1":
+        print(account.check_balance())
+    elif choice == "2":
+        amount = float(input("Enter the deposit amount: $"))
+        print(account.deposit(amount))
+    elif choice == "3":
+        amount = float(input("Enter the withdrawal amount: $"))
+        print(account.withdraw(amount))
+    elif choice == "4":
+        print("Thank you for using the ATM. Goodbye!")
+        break
+    else:
+        print("Invalid choice. Please enter a valid option.")
