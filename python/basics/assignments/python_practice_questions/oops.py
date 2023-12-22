@@ -17,7 +17,7 @@ my_car.display_info()
 # ->They represent the behavior or actions that objects created from the class can perform. 
 # ->In the Car class example, display_info is a method.
 # Inheritance: It refers to the bundling of data (attributes) and the methods that operate on that data within a single unit, i.e., the class
-# types of inheritance: 
+# types of inheritance: []
 # single inheritance: 
 class father:
     def lands(self):
